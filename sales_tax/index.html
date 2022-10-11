@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax</title>
+    <script defer src="script.js"></script>
+    <style>
+        h1 {
+            color: blue;
+        }
+        
+        div.container {
+            border: 2px solid blue;
+            width: max-content;
+            padding: 1em;
+        }
+        
+        input:read-only {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Sales Tax Calculator</h1>
+        <p>Enter Subtotal and Tax Rate and click "Calculate".</p>
+        <table>
+            <tr>
+                <td>Subtotal:</td>
+                <td><input type="text" name="subtotal" id="subtotal" /> </td>
+            </tr>
+            <tr>
+                <td>Tax Rate</td>
+                <td><input type="text" name="taxRate" id="taxRate" /> </td>
+            </tr>
+            <tr>
+                <td>Sales Tax</td>
+                <td><input readonly type="text" name="salesTax" id="salesTax" /> </td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><input readonly type="text" name="total" id="total" /> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="btnCalculate">Calculate</button>
+                    <button id="btnClear">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
